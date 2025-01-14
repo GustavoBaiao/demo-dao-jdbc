@@ -29,7 +29,10 @@ public class Main {
             System.out.println(s);
         }
 
-        
+        System.out.println("\n ================ TEST4 ===============");
+        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(),4000.00, department);
+        sellerDao.insert(newSeller);
+        System.out.println("Inseted! new id = " + newSeller.getId());
 
 
     }
